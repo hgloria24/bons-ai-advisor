@@ -8,26 +8,40 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    --background: 45 15% 97%;
+    --foreground: 120 15% 15%;
 
     --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card-foreground: 120 15% 15%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover-foreground: 120 15% 15%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    --primary: 120 25% 35%;
+    --primary-foreground: 0 0% 98%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 45 20% 92%;
+    --secondary-foreground: 120 15% 25%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: 45 15% 95%;
+    --muted-foreground: 120 8% 45%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent: 95 35% 85%;
+    --accent-foreground: 120 25% 25%;
+
+    /* Custom zen colors */
+    --zen-green: 120 25% 35%;
+    --zen-green-light: 120 20% 85%;
+    --zen-brown: 25 25% 45%;
+    --zen-brown-light: 25 15% 90%;
+    
+    /* Gradients */
+    --gradient-zen: linear-gradient(135deg, hsl(var(--zen-green)), hsl(var(--zen-brown)));
+    --gradient-peaceful: linear-gradient(180deg, hsl(var(--background)), hsl(var(--zen-green-light)));
+    
+    /* Shadows */
+    --shadow-zen: 0 4px 20px hsl(var(--zen-green) / 0.1);
+    --shadow-peaceful: 0 8px 32px hsl(var(--zen-brown) / 0.08);
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
@@ -56,26 +70,32 @@ All colors MUST be HSL.
   }
 
   .dark {
-    --background: 222.2 84% 4.9%;
-    --foreground: 210 40% 98%;
+    --background: 120 15% 8%;
+    --foreground: 45 15% 92%;
 
-    --card: 222.2 84% 4.9%;
-    --card-foreground: 210 40% 98%;
+    --card: 120 15% 10%;
+    --card-foreground: 45 15% 92%;
 
-    --popover: 222.2 84% 4.9%;
-    --popover-foreground: 210 40% 98%;
+    --popover: 120 15% 10%;
+    --popover-foreground: 45 15% 92%;
 
-    --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 11.2%;
+    --primary: 120 20% 70%;
+    --primary-foreground: 120 15% 8%;
 
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
+    --secondary: 120 10% 15%;
+    --secondary-foreground: 45 15% 85%;
 
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
+    --muted: 120 8% 12%;
+    --muted-foreground: 120 5% 60%;
 
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
+    --accent: 95 20% 20%;
+    --accent-foreground: 45 15% 85%;
+
+    /* Dark zen colors */
+    --zen-green: 120 20% 70%;
+    --zen-green-light: 120 15% 20%;
+    --zen-brown: 25 20% 60%;
+    --zen-brown-light: 25 10% 15%;
 
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 210 40% 98%;
